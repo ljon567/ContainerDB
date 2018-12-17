@@ -1,0 +1,11 @@
+C:\Users\user\source\repos\MemeBank\MemeBank\bin\Debug\netcoreapp2.0\MemeBank.deps.json
+C:\Users\user\source\repos\MemeBank\MemeBank\bin\Debug\netcoreapp2.0\MemeBank.runtimeconfig.json
+C:\Users\user\source\repos\MemeBank\MemeBank\bin\Debug\netcoreapp2.0\MemeBank.runtimeconfig.dev.json
+C:\Users\user\source\repos\MemeBank\MemeBank\bin\Debug\netcoreapp2.0\MemeBank.dll
+C:\Users\user\source\repos\MemeBank\MemeBank\bin\Debug\netcoreapp2.0\MemeBank.pdb
+C:\Users\user\source\repos\MemeBank\MemeBank\obj\Debug\netcoreapp2.0\MemeBank.csprojAssemblyReference.cache
+C:\Users\user\source\repos\MemeBank\MemeBank\obj\Debug\netcoreapp2.0\MemeBank.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\MemeBank\MemeBank\obj\Debug\netcoreapp2.0\MemeBank.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\MemeBank\MemeBank\obj\Debug\netcoreapp2.0\MemeBank.AssemblyInfo.cs
+C:\Users\user\source\repos\MemeBank\MemeBank\obj\Debug\netcoreapp2.0\MemeBank.dll
+C:\Users\user\source\repos\MemeBank\MemeBank\obj\Debug\netcoreapp2.0\MemeBank.pdb

@@ -1,0 +1,14 @@
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\bin\Debug\netcoreapp2.1\GuildrAPI.deps.json
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\bin\Debug\netcoreapp2.1\GuildrAPI.runtimeconfig.json
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\bin\Debug\netcoreapp2.1\GuildrAPI.runtimeconfig.dev.json
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\bin\Debug\netcoreapp2.1\GuildrAPI.dll
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\bin\Debug\netcoreapp2.1\GuildrAPI.pdb
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\obj\Debug\netcoreapp2.1\GuildrAPI.csprojAssemblyReference.cache
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\obj\Debug\netcoreapp2.1\GuildrAPI.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\obj\Debug\netcoreapp2.1\GuildrAPI.RazorAssemblyInfo.cache
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\obj\Debug\netcoreapp2.1\GuildrAPI.RazorAssemblyInfo.cs
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\obj\Debug\netcoreapp2.1\GuildrAPI.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\obj\Debug\netcoreapp2.1\GuildrAPI.AssemblyInfo.cs
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\obj\Debug\netcoreapp2.1\GuildrAPI.RazorTargetAssemblyInfo.cache
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\obj\Debug\netcoreapp2.1\GuildrAPI.dll
+C:\Users\user\source\repos\GuildrAPI\GuildrAPI\obj\Debug\netcoreapp2.1\GuildrAPI.pdb

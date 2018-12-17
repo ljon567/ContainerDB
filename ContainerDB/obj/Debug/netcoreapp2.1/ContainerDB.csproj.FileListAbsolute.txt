@@ -1,0 +1,14 @@
+C:\Users\user\source\repos\ContainerDB\ContainerDB\bin\Debug\netcoreapp2.1\ContainerDB.deps.json
+C:\Users\user\source\repos\ContainerDB\ContainerDB\bin\Debug\netcoreapp2.1\ContainerDB.runtimeconfig.json
+C:\Users\user\source\repos\ContainerDB\ContainerDB\bin\Debug\netcoreapp2.1\ContainerDB.runtimeconfig.dev.json
+C:\Users\user\source\repos\ContainerDB\ContainerDB\bin\Debug\netcoreapp2.1\ContainerDB.dll
+C:\Users\user\source\repos\ContainerDB\ContainerDB\bin\Debug\netcoreapp2.1\ContainerDB.pdb
+C:\Users\user\source\repos\ContainerDB\ContainerDB\obj\Debug\netcoreapp2.1\ContainerDB.csprojAssemblyReference.cache
+C:\Users\user\source\repos\ContainerDB\ContainerDB\obj\Debug\netcoreapp2.1\ContainerDB.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\ContainerDB\ContainerDB\obj\Debug\netcoreapp2.1\ContainerDB.RazorAssemblyInfo.cache
+C:\Users\user\source\repos\ContainerDB\ContainerDB\obj\Debug\netcoreapp2.1\ContainerDB.RazorAssemblyInfo.cs
+C:\Users\user\source\repos\ContainerDB\ContainerDB\obj\Debug\netcoreapp2.1\ContainerDB.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\ContainerDB\ContainerDB\obj\Debug\netcoreapp2.1\ContainerDB.AssemblyInfo.cs
+C:\Users\user\source\repos\ContainerDB\ContainerDB\obj\Debug\netcoreapp2.1\ContainerDB.RazorTargetAssemblyInfo.cache
+C:\Users\user\source\repos\ContainerDB\ContainerDB\obj\Debug\netcoreapp2.1\ContainerDB.dll
+C:\Users\user\source\repos\ContainerDB\ContainerDB\obj\Debug\netcoreapp2.1\ContainerDB.pdb
