@@ -45,6 +45,20 @@ namespace ContainerDB.Migrations
                 {
                     table.PrimaryKey("PK_ContainerItem", x => x.Id);
                 });
+
+            migrationBuilder.CreateTable(
+                name: "UserItem",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("Sqlite:Autoincrement", true),
+                    username = table.Column<string>(nullable: true),
+                    password = table.Column<string>(nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UserItem", x => x.Id);
+                });
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -53,6 +67,8 @@ namespace ContainerDB.Migrations
                 name: "LocationsItem");
             migrationBuilder.DropTable(
                 name: "ContainerItem");
+            migrationBuilder.DropTable(
+                name: "UserItem");
         }
     }
 }

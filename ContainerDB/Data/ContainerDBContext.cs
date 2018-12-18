@@ -15,5 +15,6 @@ namespace ContainerDB.Models
 
         public DbSet<ContainerDB.Models.LocationsItem> LocationsItem { get; set; }
         public DbSet<ContainerDB.Models.ContainerItem> ContainerItem { get; set; }
+        public DbSet<ContainerDB.Models.UserItem> UserItem { get; set; }
     }
 }

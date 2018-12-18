@@ -66,6 +66,20 @@ namespace ContainerDB.Migrations
 
                 b.ToTable("ContainerItem");
             });
+
+            modelBuilder.Entity("ContainerDB.Models.UserItem", b =>
+            {
+                b.Property<int>("Id")
+                    .ValueGeneratedOnAdd();
+
+                b.Property<string>("username");
+
+                b.Property<string>("password");
+
+                b.HasKey("Id");
+
+                b.ToTable("UserItem");
+            });
 #pragma warning restore 612, 618
         }
     }

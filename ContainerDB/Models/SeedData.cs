@@ -58,6 +58,22 @@ namespace ContainerDB.Models
 
                 );
                 context.SaveChanges();
+
+                if (context.UserItem.Count() > 0)
+                {
+                    return;
+                }
+
+                context.UserItem.AddRange(
+                    new UserItem
+                    {
+                        username = "Patrick the Star",
+                        password = "password"
+                    }
+
+
+                );
+                context.SaveChanges();
             }
         }
     }
