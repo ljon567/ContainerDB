@@ -152,6 +152,12 @@ namespace ContainerDB.Controllers
                 //Upload all variables
                 LocationsItem locationsItem = new LocationsItem();
                 locationsItem.ContainerID = locations.ContainerID;
+                locationsItem.Tauranga = locations.Tauranga;
+                locationsItem.Lyttleton = locations.Lyttleton;
+                locationsItem.Timaru = locations.Timaru;
+                locationsItem.Otago = locations.Otago;
+                locationsItem.Kiwirail = locations.Kiwirail;
+                locationsItem.PortConnect = locations.PortConnect;
 
                 //Upload url of image
                 // System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
