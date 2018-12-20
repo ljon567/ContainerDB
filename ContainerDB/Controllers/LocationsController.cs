@@ -41,16 +41,16 @@ namespace ContainerDB.Controllers
             return _context.LocationsItem.Where(m => m.Class == Class);
         }*/
 
-        // PUT: api/Locations/id (Update locations #id)
-        [HttpPut("{LocationsID}")]
-        public async Task<IActionResult> PutLocationsItem([FromRoute] int LocationsID, [FromBody] LocationsItem locationsItem)
+        // PUT: api/Locations/containerID (Update locations at container #id)
+        [HttpPut("{ContainerID}")]
+        public async Task<IActionResult> PutLocationsItem([FromRoute] string ContainerID, [FromBody] LocationsItem locationsItem)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (LocationsID != locationsItem.Id)
+            if (ContainerID != locationsItem.ContainerID)
             {
                 return BadRequest();
             }
@@ -63,14 +63,7 @@ namespace ContainerDB.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!LocationsItemExists(LocationsID))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
+                return NotFound();
             }
 
             return NoContent();
