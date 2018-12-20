@@ -34,12 +34,12 @@ namespace ContainerDB.Controllers
             return _context.LocationsItem;
         }
 
-        // GET: api/Locations/class
-        /*[HttpGet("{Class}")]
-        public IEnumerable<LocationsItem> GetLocationsItemWithClass([FromRoute] string Class)
+        // GET: api/Locations/ContainerID
+        [HttpGet("{ContainerID}")]
+        public IEnumerable<LocationsItem> GetLocationsItemWithContainerID([FromRoute] string ContainerID)
         {
-            return _context.LocationsItem.Where(m => m.Class == Class);
-        }*/
+            return _context.LocationsItem.Where(m => m.ContainerID == ContainerID);
+        }
 
         // PUT: api/Locations/containerID (Update locations at container #id)
         [HttpPut("{ContainerID}")]
