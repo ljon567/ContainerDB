@@ -34,6 +34,13 @@ namespace ContainerDB.Controllers
             return _context.ContainerItem;
         }
 
+        // GET: api/Container/ContainerID
+        [HttpGet("{ContainerID}")]
+        public IEnumerable<ContainerItem> GetContainerItemWithContainerID([FromRoute] string ContainerID)
+        {
+            return _context.ContainerItem.Where(m => m.ContainerID == ContainerID);
+        }
+
         // GET: api/Container/class
         /*[HttpGet("{Class}")]
         public IEnumerable<ContainerItem> GetContainerItemWithClass([FromRoute] string Class)
