@@ -160,13 +160,18 @@ namespace ContainerDB.Controllers
                 ContainerItem containerItem = new ContainerItem();
                 containerItem.ContainerID = container.ContainerID;
                 containerItem.shipco = container.shipco;
-                containerItem.size = container.size;
+                containerItem.ISO = container.ISO;
                 containerItem.grade = container.grade;
                 containerItem.location = container.location;
-                containerItem.full = container.full;
                 containerItem.status = container.status;
                 containerItem.time = container.time;
-                containerItem.type = container.type;
+                containerItem.booking = container.booking;
+                containerItem.vessel = container.vessel;
+                containerItem.loadPort = container.loadPort;
+                containerItem.weight = container.weight;
+                containerItem.category = container.category;
+                containerItem.seal = container.seal;
+                containerItem.commodity = container.commodity;
 
                 //Upload url of image
                 // System.Drawing.Image image = System.Drawing.Image.FromStream(stream);

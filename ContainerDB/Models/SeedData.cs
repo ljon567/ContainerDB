@@ -28,8 +28,7 @@ namespace ContainerDB.Models
                         Lyttleton = "Lyttleton",
                         Timaru = "Timaru",
                         Otago = "Otago",
-                        Kiwirail = "Kiwirail",
-                        PortConnect = "PortConnect"
+                        Kiwirail = "Kiwirail"
                     }
 
 
@@ -46,13 +45,18 @@ namespace ContainerDB.Models
                     {
                         ContainerID = "Patrick the Star",
                         shipco = "Maersk",
-                        size = "20 feet",
+                        ISO = "2510",
                         grade = 9,
                         location = "Penrose",
-                        full = false,
-                        status = "Hired",
+                        status = "Full",
                         time = "18/12/2018",
-                        type = "insulated"
+                        booking = "ABC123",
+                        vessel = "Davy Jones Locker",
+                        loadPort = "Bikini Bottom",
+                        weight = "9000",
+                        category = "Export",
+                        seal = "NZNZ0101",
+                        commodity = "starfish"
                     }
 
 

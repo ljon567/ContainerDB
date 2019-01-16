@@ -17,8 +17,7 @@ namespace ContainerDB.Migrations
                     Lyttleton = table.Column<string>(nullable: true),
                     Timaru = table.Column<string>(nullable: true),
                     Otago = table.Column<string>(nullable: true),
-                    Kiwirail = table.Column<string>(nullable: true),
-                    PortConnect = table.Column<string>(nullable: true)
+                    Kiwirail = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
@@ -33,13 +32,18 @@ namespace ContainerDB.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     ContainerID = table.Column<string>(nullable: true),
                     shipco = table.Column<string>(nullable: true),
-                    size = table.Column<string>(nullable: true),
+                    ISO = table.Column<string>(nullable: true),
                     grade = table.Column<int>(nullable: true),
                     location = table.Column<int>(nullable: true),
-                    full = table.Column<bool>(nullable: true),
                     status = table.Column<string>(nullable: true),
                     time = table.Column<string>(nullable: true),
-                    type = table.Column<string>(nullable: true)
+                    booking = table.Column<string>(nullable: true),
+                    vessel = table.Column<string>(nullable: true),
+                    loadPort = table.Column<string>(nullable: true),
+                    weight = table.Column<string>(nullable: true),
+                    category = table.Column<string>(nullable: true),
+                    seal = table.Column<string>(nullable: true),
+                    commodity = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

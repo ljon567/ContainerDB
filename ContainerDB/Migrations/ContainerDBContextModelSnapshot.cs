@@ -32,8 +32,6 @@ namespace ContainerDB.Migrations
 
                     b.Property<string>("Kiwirail");
 
-                    b.Property<string>("PortConnect");
-
                     b.HasKey("Id");
 
                     b.ToTable("LocationsItem");
@@ -48,19 +46,29 @@ namespace ContainerDB.Migrations
 
                 b.Property<string>("shipco");
 
-                b.Property<string>("size");
+                b.Property<string>("ISO");
 
                 b.Property<int>("grade");
 
                 b.Property<string>("location");
 
-                b.Property<bool>("full");
-
                 b.Property<string>("status");
 
                 b.Property<string>("time");
 
-                b.Property<string>("type");
+                b.Property<string>("booking");
+
+                b.Property<string>("vessel");
+
+                b.Property<string>("loadPort");
+
+                b.Property<string>("weight");
+
+                b.Property<string>("category");
+
+                b.Property<string>("seal");
+
+                b.Property<string>("commodity");
 
                 b.HasKey("Id");
 
