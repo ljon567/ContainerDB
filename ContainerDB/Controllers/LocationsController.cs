@@ -150,6 +150,7 @@ namespace ContainerDB.Controllers
                 locationsItem.Timaru = locations.Timaru;
                 locationsItem.Otago = locations.Otago;
                 locationsItem.Kiwirail = locations.Kiwirail;
+                locationsItem.Auckland = locations.Auckland;
 
                 //Upload url of image
                 // System.Drawing.Image image = System.Drawing.Image.FromStream(stream);

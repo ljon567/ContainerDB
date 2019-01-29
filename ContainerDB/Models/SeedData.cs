@@ -28,7 +28,8 @@ namespace ContainerDB.Models
                         Lyttleton = "Lyttleton",
                         Timaru = "Timaru",
                         Otago = "Otago",
-                        Kiwirail = "Kiwirail"
+                        Kiwirail = "Kiwirail",
+                        Auckland = "Auckland"
                     }
 
 

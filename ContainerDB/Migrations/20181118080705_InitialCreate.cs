@@ -17,7 +17,8 @@ namespace ContainerDB.Migrations
                     Lyttleton = table.Column<string>(nullable: true),
                     Timaru = table.Column<string>(nullable: true),
                     Otago = table.Column<string>(nullable: true),
-                    Kiwirail = table.Column<string>(nullable: true)
+                    Kiwirail = table.Column<string>(nullable: true),
+                    Auckland= table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

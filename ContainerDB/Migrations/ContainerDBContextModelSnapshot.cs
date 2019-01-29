@@ -32,6 +32,8 @@ namespace ContainerDB.Migrations
 
                     b.Property<string>("Kiwirail");
 
+                    b.Property<string>("Auckland");
+
                     b.HasKey("Id");
 
                     b.ToTable("LocationsItem");
