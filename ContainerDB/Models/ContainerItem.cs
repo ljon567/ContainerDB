@@ -22,5 +22,7 @@ namespace ContainerDB.Models
         public string category { get; set; }
         public string seal { get; set; }
         public string commodity { get; set; }
+        public string temperature { get; set; }
+        public string hazard { get; set; }
     }
 }

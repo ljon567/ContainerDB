@@ -72,6 +72,10 @@ namespace ContainerDB.Migrations
 
                 b.Property<string>("commodity");
 
+                b.Property<string>("temperature");
+
+                b.Property<string>("hazard");
+
                 b.HasKey("Id");
 
                 b.ToTable("ContainerItem");

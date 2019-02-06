@@ -44,7 +44,9 @@ namespace ContainerDB.Migrations
                     weight = table.Column<string>(nullable: true),
                     category = table.Column<string>(nullable: true),
                     seal = table.Column<string>(nullable: true),
-                    commodity = table.Column<string>(nullable: true)
+                    commodity = table.Column<string>(nullable: true),
+                    temperature = table.Column<string>(nullable: true),
+                    hazard = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {

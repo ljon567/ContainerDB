@@ -172,6 +172,8 @@ namespace ContainerDB.Controllers
                 containerItem.category = container.category;
                 containerItem.seal = container.seal;
                 containerItem.commodity = container.commodity;
+                containerItem.temperature = container.temperature;
+                containerItem.hazard = container.hazard;
 
                 //Upload url of image
                 // System.Drawing.Image image = System.Drawing.Image.FromStream(stream);

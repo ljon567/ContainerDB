@@ -57,7 +57,9 @@ namespace ContainerDB.Models
                         weight = "9000",
                         category = "Export",
                         seal = "NZNZ0101",
-                        commodity = "starfish"
+                        commodity = "starfish",
+                        temperature = "100 degree celcius",
+                        hazard = "very"
                     }
 
 
