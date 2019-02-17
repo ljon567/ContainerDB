@@ -6,9 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ContainerDB.Models;
 using ContainerDB.Helpers;
-using Microsoft.WindowsAzure.Storage.Blob;
-using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.Extensions.Configuration;
 
 namespace ContainerDB.Controllers
@@ -33,13 +30,6 @@ namespace ContainerDB.Controllers
         {
             return _context.UserItem;
         }
-
-        // GET: api/Container/class
-        /*[HttpGet("{Class}")]
-        public IEnumerable<UserItem> GetUserItemWithClass([FromRoute] string Class)
-        {
-            return _context.UserItem.Where(m => m.Class == Class);
-        }*/
 
         // PUT: api/User/id (Update user #id)
         [HttpPut("{UserID}")]
@@ -120,7 +110,7 @@ namespace ContainerDB.Controllers
         // GET: api/User/username (Get all usernames)
         [Route("username")]
         [HttpGet]
-        public async Task<List<string>> GetClass()
+        public async Task<List<string>> GetUsername()
         {
             var users = (from m in _context.UserItem
                               select m.username).Distinct();
@@ -132,7 +122,7 @@ namespace ContainerDB.Controllers
 
         //Upload user 
         [HttpPost, Route("uploadUser")]
-        public async Task<IActionResult> UploadFile([FromForm]UserUploadItem user)
+        public async Task<IActionResult> UploadUserItem([FromForm]UserUploadItem user)
         {
             if (!MultipartRequestHelper.IsMultipartContentType(Request.ContentType))
             {
@@ -140,97 +130,19 @@ namespace ContainerDB.Controllers
             }
             try
             {
-                /*using (var stream = container.Image.OpenReadStream())
-                {
-                    var cloudBlock = await UploadToBlob(container.Image.FileName, null, stream);
-
-                    if (string.IsNullOrEmpty(cloudBlock.StorageUri.ToString()))
-                    {
-                        return BadRequest("An error has occured while uploading your file. Please try again.");
-                    }*/
-
                 //Upload all variables
                 UserItem userItem = new UserItem();
                 userItem.username = user.username;
                 userItem.password = user.password;
 
-                //Upload url of image
-                // System.Drawing.Image image = System.Drawing.Image.FromStream(stream);
-                // userItem.Url = cloudBlock.SnapshotQualifiedUri.AbsoluteUri;
-                // userItem.Uploaded = DateTime.Now.ToString();
-
                 _context.UserItem.Add(userItem);
                 await _context.SaveChangesAsync();
 
                 return Ok($"File: {user.username} has successfully uploaded");
-                //}
             }
             catch (Exception ex)
             {
                 return BadRequest($"An error has occured. Details: {ex.Message}");
-            }
-
-
-        }
-
-        //Send image file to blob storage on Azure
-        /*private async Task<CloudBlockBlob> UploadToBlob(string filename, byte[] imageBuffer = null, System.IO.Stream stream = null)
-        {
-
-            var accountName = _configuration["AzureBlob:name"];
-            var accountKey = _configuration["AzureBlob:key"]; ;
-            var storageAccount = new CloudStorageAccount(new StorageCredentials(accountName, accountKey), true);
-            CloudBlobClient blobClient = storageAccount.CreateCloudBlobClient();
-
-            CloudBlobContainer imagesContainer = blobClient.GetContainerReference("containerimages");
-
-            string storageConnectionString = _configuration["AzureBlob:connectionString"];
-
-            //Check whether the connection string can be parsed
-            if (CloudStorageAccount.TryParse(storageConnectionString, out storageAccount))
-            {
-                try
-                {
-                    //Generate a new filename for every new blob
-                    var fileName = Guid.NewGuid().ToString();
-                    fileName += GetFileExtention(filename);
-
-                    //Get a reference to the blob address, then upload the file to the blob
-                    CloudBlockBlob cloudBlockBlob = imagesContainer.GetBlockBlobReference(fileName);
-
-                    if (stream != null)
-                    {
-                        await cloudBlockBlob.UploadFromStreamAsync(stream);
-                    }
-                    else
-                    {
-                        return new CloudBlockBlob(new Uri(""));
-                    }
-
-                    return cloudBlockBlob;
-                }
-                catch (StorageException ex)
-                {
-                    return new CloudBlockBlob(new Uri(""));
-                }
-            }
-            else
-            {
-                return new CloudBlockBlob(new Uri(""));
-            }
-
-        }*/
-
-        private string GetFileExtention(string fileName)
-        {
-            //No extension
-            if (!fileName.Contains("."))
-                return "";
-            else
-            {
-                //Assumes last item is the extension 
-                var extentionList = fileName.Split('.');
-                return "." + extentionList.Last();
             }
         }
     }
